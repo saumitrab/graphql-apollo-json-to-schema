@@ -87,7 +87,7 @@ returnObj+=`\n type ${cleanName(name)} { \n`
 }
 
 const cleanName = function(name){
-  return name.replace(/[^a-zA-Z ]/ig, "")
+  return name.replace(/[^a-zA-Z0-9_ ]/ig, "")
 }
 const setClose = function(rootOutput) {
   return rootOutput+=` }\n`; }
